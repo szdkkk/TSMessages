@@ -19,7 +19,7 @@
     
     [TSMessage setDefaultViewController:self];
     [TSMessage setDelegate:self];
-    self.wantsFullScreenLayout = YES;
+    
     [self.navigationController.navigationBar setTranslucent:YES];
 }
 

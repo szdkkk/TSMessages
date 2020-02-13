@@ -1,15 +1,8 @@
 source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '11.0'
 
-
-target 'TSMessages', :exclusive => true do
+target 'TSMessages' do
+  use_frameworks!
   pod "TSMessages", :path => "../"
 end
 
-target 'Tests', :exclusive => true do
-  pod "TSMessages", :path => "../"
-
-  pod 'Specta', '~> 0.2.1'
-  pod 'Expecta'
-  pod 'FBSnapshotTestCase'
-  pod 'Expecta+Snapshots'
-end
